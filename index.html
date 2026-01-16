@@ -1,16 +1,209 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=Students%27%20Guide%20to%20Practicals%20on%20Systems-on-Chip%20Design.pdf">
-    <title>SoC Design Practicals</title>
-  </head>
-  <body>
-    <p>
-      If the PDF does not open automatically,
-      <a href="Students%27%20Guide%20to%20Practicals%20on%20Systems-on-Chip%20Design.pdf">
-        click here
-      </a>.
-    </p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students' Guide: Systems-on-Chip Design | UoP</title>
+    <style>
+        :root {
+            --uop-navy: #1a237e;
+            --uop-maroon: #800000;
+            --text-gray: #333;
+            --light-bg: #f4f7f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-gray);
+            line-height: 1.6;
+            background-color: #fff;
+        }
+
+        /* Navigation */
+        nav {
+            background: #fff;
+            padding: 1rem 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav img { height: 130px; }
+
+        .nav-address {
+            font-weight: bold;
+            color: var(--uop-navy);
+            text-align: right;
+            line-height: 1.2;
+        }
+
+        .nav-address span {
+            font-size: 1.15rem;
+            display: block;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--uop-navy) 0%, #283593 100%);
+            color: white;
+            padding: 4rem 10%;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-text { flex: 1; min-width: 300px; }
+        .hero-text h1 { font-size: 2.2rem; margin-bottom: 1rem; }
+        
+        .hero-image {
+            flex: 0 1 250px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .hero-image img { width: 100%; display: block; }
+
+        /* Main Content */
+        .container { padding: 4rem 10%; }
+
+        .section-title {
+            color: var(--uop-navy);
+            border-left: 5px solid var(--uop-maroon);
+            padding-left: 15px;
+            margin: 3rem 0 1.5rem;
+        }
+
+        /* Grid for Info Cards */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .info-card {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-top: 4px solid var(--uop-navy);
+        }
+
+        .info-card h3 { color: var(--uop-navy); margin-top: 0; }
+        .info-card a {
+            word-break: break-all;     
+            overflow-wrap: break-word; 
+            display: inline-block;     
+        }
+
+        /* Disclaimer Styling */
+        .disclaimer-box {
+            font-size: 0.9rem;
+            color: #555;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--uop-maroon);
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover { opacity: 0.9; }
+
+        footer {
+            background: #222;
+            color: #ccc;
+            padding: 2rem 10%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero { padding: 2rem 5%; text-align: center; justify-content: center; }
+            .container { padding: 2rem 5%; }
+            nav { flex-direction: row; justify-content: space-between; }
+            .nav-address { font-size: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <img src="logo-uop.png" alt="University of Peradeniya Logo">
+    <div class="nav-address">
+        <span>Department of Computer Engineering</span> <br>
+        Faculty of Engineering<br>
+        University of Peradeniya<br>
+        Sri Lanka
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="hero-text">
+        <h1>Students' Guide to Practicals on Systems-on-Chip Design</h1>
+        <p>A hands-on, application-driven approach to SoC design and FPGA-based prototyping using industrial-grade tools</p>
+        <a href="Students' Guide to Practicals on Systems-on-Chip Design.pdf" class="btn" target="_blank">Download the eBook</a>
+    </div>
+    <div class="hero-image">
+        <img src="book-cover.png" alt="Book Cover">
+    </div>
+</header>
+
+<div class="container">
+    
+    <h2 class="section-title">Introduction</h2>
+    <div class="intro-text">
+       <p>This book introduces students to the fundamental concepts of SoC design and FPGA-based prototyping using industrial-grade tools. It bridges theory and practice, focusing not only on what SoC and FPGA technologies are, but how they are used in real engineering workflows.</p>
+    
+    <p>Beginning with the building blocks of reconfigurable logic, the book guides learners through the process of designing, analyzing, synthesizing, testing, and deploying complete digital systems on FPGA hardware. The material provides a practical and accessible starting point for students encountering SoC concepts for the first time, as well as practitioners and educators looking for structured material for project-based learning.</p>
+    </div>
+
+    <div class="grid-layout">
+        <div class="info-card">
+            <h3>Correspondence</h3>
+            <p><strong>Dr. Isuru Nawinne</strong><br>
+            Department of Computer Engineering,<br>
+            Faculty of Engineering,<br>
+            University of Peradeniya,<br>
+            Peradeniya 20400, Sri Lanka.</p>
+            <p>Email: <a href="mailto:isurunawinne@eng.pdn.ac.lk">isurunawinne@eng.pdn.ac.lk</a></p>
+            <p>Website: <a href="https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/" target="_blank">https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/</a></p>
+        
+        </div>
+
+        <div class="info-card" style="border-top-color: var(--uop-maroon);">
+            <h3>Publication Info</h3>
+            <p><strong>ISBN:</strong> 978-624-92913-3-1</p>
+            <p><strong>License:</strong> Creative Commons BY-NC 4.0 International</p>
+            <p><strong>Citation:</strong> Nawinne, I. (2025). <em>Students' Guide to Practicals on Systems-on-Chip Design</em></p>
+            <p><strong>Website:</strong> <a href="https://cepdnaclk.github.io/soc-design" target="_blank">https://cepdnaclk.github.io/soc-design</a></p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Disclaimer</h2>
+    <div class="disclaimer-box">
+        <p>The author provides this book and its contents on an "as is" basis and makes no representations or warranties of any kind with respect to this book or its contents. The author disclaims all such representations and warranties, including but not limited to warranties of fitness for a particular purpose. In addition, the author assumes no responsibility for errors, inaccuracies, omissions, or any other inconsistencies herein.</p>
+        
+        <p>The author makes no guarantees concerning the level of success you may experience by following the guidelines and strategies contained in this handbook, and you accept the risk that results will differ for each individual. All procedures and guidelines are dependent on the adequate prior training given to all responsible authorities, staff members and students.</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Isuru Nawinne.</p>
+    <p>Licensed under Creative Commons Attribution-NonCommercial 4.0 International.</p>
+</footer>
+
+</body>
 </html>
